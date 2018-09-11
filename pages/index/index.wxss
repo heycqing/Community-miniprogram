@@ -39,6 +39,7 @@
     padding-top:15rpx;
     top:-48rpx;
     right:-242rpx;
-    
-    
+}
+.map:after{
+    border:none;
 }
