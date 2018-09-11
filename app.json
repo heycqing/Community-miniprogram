@@ -1,0 +1,11 @@
+{
+    "pages" :[
+        "pages/index/index"
+    ],
+    "window" : {
+        "navigationBarBackgroundColor":"#4e8a63",
+        "navigationBarTitleText" : "北理珠社区",
+        "backgroundColor" : "#f4f4f4",
+        "backgroundTextStyle": "light"
+    }
+}

@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}"> 
+    <block wx:for="{{imgUrls}}" wx:key="item"> 
+        <swiper-item >
+            <image src="{{item}}" class="slide-image"  alt=""  />
+        </swiper-item>
+    </block>
+</swiper>
+
+<view class='introduction'>
+    <view class="title" >{{introduction.title}}</view>
+    <view class="subtitle" >{{introduction.subtitle}}</view>
+    <text class="content" >{{introduction.content}}</text>
+</view>
