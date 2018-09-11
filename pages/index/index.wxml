@@ -10,5 +10,7 @@
 <view class='introduction'>
     <view class="title" >{{introduction.title}}</view>
     <view class="subtitle" >{{introduction.subtitle}}</view>
-    <text class="content" >{{introduction.content}}</text>
+    <text class="content" space="emsp">{{introduction.content}}</text>
 </view>
+
+<view class="personRight">®所有权归 heycqing </text>
