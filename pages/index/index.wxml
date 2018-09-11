@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}"> 
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoPlay}}" indicator-active-color="#ffffff"> 
     <block wx:for="{{imgUrls}}" wx:key="item"> 
         <swiper-item >
             <image src="{{item}}" class="slide-image"  alt=""  />
@@ -7,10 +7,12 @@
     </block>
 </swiper>
 
+<button class='map'>地图导航</button>
+
 <view class='introduction'>
     <view class="title" >{{introduction.title}}</view>
     <view class="subtitle" >{{introduction.subtitle}}</view>
     <text class="content" space="emsp">{{introduction.content}}</text>
 </view>
 
-<view class="personRight">®所有权归 heycqing </text>
+<view class="personRight">®所有权归 heycqing </view>

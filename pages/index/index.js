@@ -6,9 +6,10 @@ Page({
    */
   data: {
       imgUrls:[
-        'https://cimg2.res.meizu.com/m/m20180629/fACDE5431JKL0NzPQRSTvVWtYZrbndmi.jpg',
-        'https://cimg2.res.meizu.com/m/m20180629/f98D6FG3I0zvusOqQjSThePAYZa7cd4B.jpg',
-        'https://cimg2.res.meizu.com/m/m201806/f9CD76G31J0zwNutQRrTUVqXYmkbcdjB.jpg'
+        '/static/imgs/index_1.jpeg',
+        '/static/imgs/index_2.jpeg',
+        '/static/imgs/index_3.jpeg'
+
       ],
       indicatorDots:true,
       autoplay:true,

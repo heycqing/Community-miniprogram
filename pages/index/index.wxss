@@ -1,6 +1,6 @@
 /* pages/index/index.wxss */
 .introduction{
-    margin:64rpx 48rpx 16rpx 48rpx;
+    margin:0rpx 48rpx 16rpx 48rpx;
 }
 .title{
     font-weight: 700;
@@ -22,4 +22,23 @@
     font-weight:300;
     text-indent:64rpx;
     line-height:54rpx;
+}
+.map{
+    border-radius:50rpx;
+    width:96rpx;
+    height:96rpx;
+    background-color:#30533c;
+    border:none;
+    border-style:none;
+    font-size:26rpx;
+    outline:#ffffff;
+    color:#fff;
+    font-weight:300;
+    line-height:33rpx;
+    padding:0 12rpx;
+    padding-top:15rpx;
+    top:-48rpx;
+    right:-242rpx;
+    
+    
 }

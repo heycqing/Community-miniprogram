@@ -1,4 +1,5 @@
 /* 全局滑块 */
+
 swiper{
     height:240px;
 }
@@ -9,3 +10,13 @@ image{
 navigation{
     background-color: aqua;
 }
+.personRight{
+    font-weight:100;
+    font-size:20rpx;
+    margin:0 auto;
+    text-align:center;
+}
+:focus {
+    outline: 0;
+}
+
