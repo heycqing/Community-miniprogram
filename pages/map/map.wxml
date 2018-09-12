@@ -1,0 +1,2 @@
+<!--pages/map/map.wxml-->
+<map class="map" longitude="113.542300" latitude="22.363250" markers="{{markers}}" bindmarkertap="changeMark"></map>

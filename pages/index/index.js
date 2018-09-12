@@ -6,9 +6,9 @@ Page({
    */
   data: {
       imgUrls:[
-        '/static/imgs/index_1.jpeg',
-        '/static/imgs/index_2.jpeg',
-        '/static/imgs/index_3.jpeg'
+        '/static/index_imgs/index_1.jpeg',
+        '/static/index_imgs/index_2.jpeg',
+        '/static/index_imgs/index_3.jpeg'
 
       ],
       indicatorDots:true,
@@ -18,6 +18,12 @@ Page({
         subtitle : "德以明理 学以精工",
         content : "  北京理工大学珠海学院是经中华人民共和国教育部批准，于2004年5月8日正式成立的普通高等学校。\n  学校坐落在美丽的珠海市唐家湾，京港澳高速公路、广东西部沿海高速公路从学校的东北两侧通过，学校东门面对广珠城轨唐家湾站，50分钟往返珠海与广州，交通十分便利。校园内20万平方米的人工湖波光涟漪，绿化环境达校区总面积80%以上，绿树成荫，鸟语花香，浅潭碧水点缀其中，宁静、典雅，是莘莘学子学习生活的理想之地。\n  学校内有着众多小吃店铺，可以在当前页面地图导航查看。"
       }
+  },
+  goToUrl: function(){
+    let url = '/pages/map/map';
+    wx.navigateTo({
+      url
+    })
   },
 
   /**

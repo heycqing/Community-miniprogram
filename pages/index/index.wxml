@@ -7,7 +7,7 @@
     </block>
 </swiper>
 
-<button class='map'>地图导航</button>
+<button class='map' bindtap="goToUrl">地图导航</button>
 
 <view class='introduction'>
     <view class="title" >{{introduction.title}}</view>
