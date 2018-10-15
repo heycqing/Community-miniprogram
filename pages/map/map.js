@@ -5,39 +5,62 @@ Page({
    * 页面的初始数据
    */
   data: {
-    markers:[{
-      id:0,
-      iconPath:"/static/map_imgs/icon/icon_0.png",
-      longitude:113.542300,
-      latitude:22.363250,
-      width:40,
-      height:40,
-      title: "篮球场"
-    }]
-  },
-  changeMark: function(e){
-  
-    let markerId = e.markerId;
-    let iconpath = this.data.markers[markerId].iconPath;
-    console.log('1.\ticonPath:\t'+iconpath)
-    var str = "markers["+markerId+"].iconPath";
-    console.log('str:\t'+str)
-    if(iconpath === this.data.markers[markerId].iconPath){
- 
-      this.setData({
-  
-        str: "/static/map_imgs/icon/icon_0_out.png"
-     
-      })
-     console.log(this.data.markers[markerId].iconPath)
-    console.log('2.\ticonPath:\t'+this.data.markers[markerId].iconPath)
-      
-    }else{
-      console.log('here')
-    }
-    
-   
+
   },
 
-  
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
 })

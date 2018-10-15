@@ -1,0 +1,45 @@
+/* pages/index/index.wxss */
+.introduction{
+    margin:0rpx 48rpx 16rpx 48rpx;
+}
+.title{
+    font-weight: 700;
+    font-size: 48rpx;
+    letter-spacing:4rpx;
+    color: #4e8a63;
+}
+.subtitle{
+    font-weight:500;
+    font-size:36rpx;
+    height:40rpx;
+    line-height:40rpx;
+    margin-bottom:38rpx;
+    margin-top:12rpx;
+    color: #42a063;
+}
+.content{
+    font-size:32rpx;
+    font-weight:300;
+    text-indent:64rpx;
+    line-height:54rpx;
+}
+.map{
+    border-radius:50rpx;
+    width:96rpx;
+    height:96rpx;
+    background-color:#30533c;
+    border:none;
+    border-style:none;
+    font-size:26rpx;
+    outline:#ffffff;
+    color:#fff;
+    font-weight:300;
+    line-height:33rpx;
+    padding:0 12rpx;
+    padding-top:15rpx;
+    top:-48rpx;
+    right:-242rpx;
+}
+.map:after{
+    border:none;
+}
