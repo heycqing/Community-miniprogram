@@ -7,7 +7,7 @@
             </cover-view>
             <cover-view class='cover-view-middle'></cover-view>
             <cover-view class='cover-view-2'>
-                <cover-image class='map-cover-image cover-image-2' src="/static/icon/icon-1.png" ></cover-image>
+                <cover-image class='map-cover-image cover-image-2' src="/static/icon/icon-1.png" bindtap='goToPerson'></cover-image>
             </cover-view>
     </cover-view>
 

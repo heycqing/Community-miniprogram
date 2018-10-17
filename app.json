@@ -1,6 +1,7 @@
 {
     "pages" :[
-        "pages/index/index"
+        "pages/index/index",
+        "pages/person/person"
     ],
     "window" : {
         "navigationBarBackgroundColor":"#4e8a63",

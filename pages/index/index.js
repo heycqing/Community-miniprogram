@@ -34,5 +34,10 @@ Page({
   },
   moveToLocation: function(){
     this.mapCtx.moveToLocation();
-  }
+  },
+  goToPerson: function(){
+    let url = '/pages/person/person';
+    wx.navigateTo({url});
+  },
+
 })
