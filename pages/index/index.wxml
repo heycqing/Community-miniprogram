@@ -1,2 +1,14 @@
 <!--pages/map/map.wxml-->
-<map class="map" longitude="113.542300" latitude="22.363250" markers="{{markers}}" bindmarkertap="changeMark"></map>
+
+<map class="map" id='zhbitMap' longitude="113.542300" latitude="22.363250" markers="{{markers}}" bindmarkertap="changeMark" subkey="5NLBZ-SXSKV-T2MPS-UMOFV-JC5Z5-7VFY7" show-location>
+    <cover-view class='cover-view-contain'>
+           <cover-view class='cover-view-1' position='bottom'>
+                <cover-image class='map-cover-image cover-image-1' src="/static/icon/icon-2.png" bindtap='moveToLocation'></cover-image>
+            </cover-view>
+            <cover-view class='cover-view-middle'></cover-view>
+            <cover-view class='cover-view-2'>
+                <cover-image class='map-cover-image cover-image-2' src="/static/icon/icon-1.png" ></cover-image>
+            </cover-view>
+    </cover-view>
+
+</map>
