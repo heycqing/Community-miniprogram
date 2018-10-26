@@ -67,5 +67,8 @@
 - 提交代码
     + 每人有一个自己 `GitHub` 账号;
     + **一定一定要使用** `git` 来提交代码;
+<<<<<<< HEAD
 - 遇到 bug 或者 问题一定要提 issues
      ![image](./readme-imgs/issues.png)
+=======
+>>>>>>> 7b337acf5db0ec6f31b21765d84279bb4a9edb17
