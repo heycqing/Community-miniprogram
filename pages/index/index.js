@@ -1,45 +1,43 @@
-// pages/map/map.js
+// pages/index/index.js
+var QQMapWX = require('../../libs/qqmap-wx-jssdk.min.js');
+var qqmapsdk;
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    // subkey:'5NLBZ-SXSKV-T2MPS-UMOPF-JC5Z5-7VFY7',
-
-    markers:[{
-      id:0,
-      iconPath:"/static/map_imgs/icon/icon_0.png",
-      longitude:113.542300,
-      latitude:22.363250,
-      width:40,
-      height:40,
-      title: "篮球场"
-    }]
+  data:{
   },
-  changeMark: function(e){
-  
-    let markerId = e.markerId;
-    let iconpath = this.data.markers[markerId].iconPath;
-    console.log('1.\ticonPath:\t'+iconpath)
-    var str = "markers["+markerId+"].iconPath";
-    console.log('str:\t'+str)
-    if(iconpath === this.data.markers[markerId].iconPath){
  
-      this.setData({
-  
-        str: "/static/map_imgs/icon/icon_0_out.png"
-     
-      })
-     console.log(this.data.markers[markerId].iconPath)
-    console.log('2.\ticonPath:\t'+this.data.markers[markerId].iconPath)
+  onLoad: function () {
+      // 实例化API核心类
+      qqmapsdk = new QQMapWX({
+          key: '5NLBZ-SXSKV-T2MPS-UMOFV-JC5Z5-7VFY7'
+      });
       
-    }else{
-      console.log('here')
+  },
+  onShow: function () {
+    // 调用接口
+    qqmapsdk.search({
+        keyword: '酒店',
+        success: function (res) {
+            console.log(res);
+        },
+        fail: function (res) {
+            console.log(res);
+        },
+    complete: function (res) {
+        console.log(res);
     }
-    
-   
+
+    })
+  },
+  onReady: function(e){
+    this.mapCtx = wx.createMapContext('zhbitMap');
+    this.moveToLocation();
+  },
+  moveToLocation: function(){
+    this.mapCtx.moveToLocation();
+  },
+  goToPerson: function(){
+    let url = '/pages/person/person';
+    wx.navigateTo({url});
   },
 
-  
 })

@@ -1,4 +1,4 @@
-// pages/map/map.js
+// pages/person/person.js
 Page({
 
   /**

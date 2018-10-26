@@ -1,8 +1,12 @@
 {
     "pages" :[
         "pages/index/index",
+<<<<<<< HEAD
         "pages/map/map",
         "pages/color/color"
+=======
+        "pages/person/person"
+>>>>>>> dde4dd692e013eda7fe75220d2c2d1733938e3b5
     ],
     "window" : {
         "navigationBarBackgroundColor":"#4e8a63",
