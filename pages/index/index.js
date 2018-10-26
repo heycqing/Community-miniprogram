@@ -3,6 +3,32 @@ var QQMapWX = require('../../libs/qqmap-wx-jssdk.min.js');
 var qqmapsdk;
 Page({
   data:{
+    'scale':17,
+    'enable-zoom':true,
+    'enable-scroll': true,
+    'markers':[{
+        iconPath: "/static/building/icon-11.png",
+        id: 0,
+        latitude: 22.364010,
+        longitude: 113.550610,
+        width: 28,
+        height: 28
+    },
+    {
+        iconPath: "/static/building/icon-11.png",
+        id: 1,
+        latitude: 22.357059,
+        longitude: 113.546768,
+        width: 28,
+        height: 28   
+    },{
+        iconPath: "/static/building/icon-11.png",
+        id: 2,
+        latitude: 22.366520,
+        longitude: 113.549370,
+        width: 28,
+        height: 28
+    }]
   },
  
   onLoad: function () {
@@ -30,10 +56,14 @@ Page({
   },
   onReady: function(e){
     this.mapCtx = wx.createMapContext('zhbitMap');
-    this.moveToLocation();
+    // this.moveToLocation();
   },
+  // 定位到当前位置;   
   moveToLocation: function(){
-    this.mapCtx.moveToLocation();
+    this.mapCtx.moveToLocation({
+        latitude: '22.363250',
+        longitude: '113.542300'
+    });
   },
   goToPerson: function(){
     let url = '/pages/person/person';
