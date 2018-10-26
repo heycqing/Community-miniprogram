@@ -1,7 +1,8 @@
 {
     "pages" :[
         "pages/index/index",
-        "pages/map/map"
+        "pages/map/map",
+        "pages/color/color"
     ],
     "window" : {
         "navigationBarBackgroundColor":"#4e8a63",
