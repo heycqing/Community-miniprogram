@@ -12,7 +12,7 @@
 		"nodeModules": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
+	"libVersion": "2.3.1",
 	"appid": "wxd11fd0106e03a756",
 	"projectname": "Community-applet",
 	"debugOptions": {
